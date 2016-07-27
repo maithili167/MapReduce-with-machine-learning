@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h1>Maithili Deshpande 0528 batch:10:30</h1>
+
+</head>
+<body>
+<form action="/upload" method="post" enctype="multipart/form-data">
+
+    Upload CSV: <input type="file" name="myfile">
+    <input type="submit">
+    </form><br>
+
+<form action="/execquery" method="post" enctype="multipart/form-data">
+
+    <input type="submit" value="Execute Map Reduce">
+    </form><br>
+<form action="/showresult" method="post" enctype="multipart/form-data">
+
+    <input type="submit" value="Show Result">
+    </form><br>
+
+<form action="/mapr" method="post" enctype="multipart/form-data">
+    Number of Mappers:<input type="text" name="mapper" value="1"><br>
+    Number of Reducers:<input type="text" name="reducer" value="1"><br>
+    <input type="submit" value="Customize MapR">
+    </form>
+
+
+<form action="/kmeans" method="post" enctype="multipart/form-data">
+    Number of clusters: <input type="text" name="cluster" ><br>
+    K-means-I : <input type="text" name="var1" ><br>
+    K-means-II: <input type="text" name="var2" >
+    <input type="submit" value="Execute K-means">
+    </form><br>
+<form action="/scattergraph" method="post" enctype="multipart/form-data">
+    Number of clusters: <input type="text" name="pointc" ><br>
+    Compare X variable:<input type="text" name="xscatter" ><br>
+    Compare Y variable:<input type="text" name="yscatter" ><br>
+    <input type="submit" value="Show Scatter graph">
+    </form><br>
+
+<form action="/bargraph" method="post" enctype="multipart/form-data">
+    Number of clusters: <input type="text" name="barc" ><br>
+    Compare X variable:<input type="text" name="x1bar" ><br>
+    Compare Y variable:<input type="text" name="y1bar" ><br>
+    <input type="submit" value="Show Bar graph">
+    </form>
+
+</body>
+</html>
